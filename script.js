@@ -1,0 +1,14 @@
+let percentElem = document.getElementById("percent");
+let billElem = document.getElementById("bill");
+let tipElem = document.getElementById("tip");
+let totalElem = document.getElementById("total");
+let resetElem = document.getElementById("reset");
+let customElem = document.getElementById("custom");
+let percent = 0;
+let bill = 0;
+let tip = 0;
+let total = 0;
+billElem.addEventListener("click", function() );
+percentElem.addEventListener("click", function() );
+resetElem.addEventListener("click", function() );
+customElem.addEventListener("click", function() );

@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Tip Calculator</title>
-    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
   </head>
   <body>
     <h1>
@@ -19,27 +18,30 @@
           <p>Bill</p>
           <input type="text" id="bill" placeholder="💲" />
           <p>Select Tip %</p>
-          <button>5%</button>
-          <button>10%</button>
-          <button>15%</button>
+          <button id="percent">5%</button>
+          <button id="percent">10%</button>
+          <button id="percent">15%</button>
           <br />
-          <button>25%</button>
-          <button>50%</button>
+          <button id="percent">25%</button>
+          <button id="percent">50%</button>
           <button id="custom">Custom</button>
 
           <p>Number of People</p>
           <input type="text" placeholder="👤" />
         </div>
         <div class="minor">
-          <div></div>
-          <div></div>
+          <div class="tip">
+            <p>Tip Amount <br />/Person</p>
+            <b>$0.00</b>
+          </div>
+          <div class="total">
+            <p>Total <br />/Person</p>
+            <b>$0.00</b>
+          </div>
           <button id="reset">RESET</button>
         </div>
       </div>
     </div>
     <script src="script.js"></script>
-    <script>
-      feather.replace();
-    </script>
   </body>
 </html>

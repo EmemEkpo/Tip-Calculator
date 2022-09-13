@@ -51,20 +51,34 @@ input {
   padding: 2px;
   border: none;
 }
+input:hover {
+  border: 2px solid hsl(172, 67%, 45%);
+}
 button {
   width: 20%;
   height: 10%;
+  font-size: 1.5rem;
   border-radius: 5px;
   background-color: hsl(183, 100%, 15%);
   margin: 7px;
-  color: hsl(0, 0%, 100%);
+  color: hsl(172, 67%, 45%);
   border: none;
+}
+button:hover {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
 }
 #custom {
   background-color: hsl(189, 41%, 97%);
   color: hsl(183, 100%, 15%);
-  font-size: 15px;
+  font-size: 1.5rem;
 }
+#custom:hover {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+  border: 2px solid hsl(172, 67%, 45%);
+}
+
 .minor {
   width: 50%;
   height: 90%;
@@ -74,4 +88,32 @@ button {
 }
 #reset {
   background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+  width: 95%;
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#reset:hover {
+  background-color: hsl(183, 100%, 15%);
+  color: hsl(172, 67%, 45%);
+  border: 2px solid hsl(172, 67%, 45%);
+}
+b {
+  color: hsl(172, 67%, 45%);
+}
+.tip {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 3.5rem;
+  margin-top: 15px;
+}
+.total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 3.5rem;
+  margin-top: 15px;
 }

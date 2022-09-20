@@ -2,8 +2,8 @@
   box-sizing: border-box;
 }
 body {
-  width: 100%;
-  height: 100%;
+  max-width: 1200px;
+  max-height: 600px;
   background-color: hsl(185, 41%, 84%);
   display: flex;
   flex-direction: column;
@@ -17,24 +17,24 @@ h1 {
   color: hsl(183, 100%, 15%);
 }
 .content {
-  width: 90vw;
-  height: 90vh;
+  width: 1000px;
+  height: 550px;
   display: flex;
-  padding: 20px;
+  padding: 15px;
 }
 .major {
-  width: 100%;
-  height: 100%;
+  width: 800px;
+  height: 530px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   border-radius: 15px;
   background-color: hsl(0, 0%, 100%);
-  padding: 20px;
+  padding: 15px;
 }
 .calc {
-  width: 50%;
-  height: 90%;
+  width: 500px;
+  height: 500px;
   border-radius: 15px;
   background-color: hsl(0, 0%, 100%);
   margin-left: 20px;
@@ -68,23 +68,23 @@ button:hover {
   background-color: hsl(172, 67%, 45%);
   color: hsl(183, 100%, 15%);
 }
-#custom {
+#percent100 {
   background-color: hsl(189, 41%, 97%);
   color: hsl(183, 100%, 15%);
   font-size: 1.5rem;
 }
-#custom:hover {
+#percent100:hover {
   background-color: hsl(172, 67%, 45%);
   color: hsl(183, 100%, 15%);
   border: 2px solid hsl(172, 67%, 45%);
 }
 
 .minor {
-  width: 50%;
-  height: 90%;
+  width: 500px;
+  height: 500px;
   border-radius: 15px;
   background-color: hsl(183, 100%, 15%);
-  padding: 20px;
+  padding: 15px;
 }
 #reset {
   background-color: hsl(172, 67%, 45%);

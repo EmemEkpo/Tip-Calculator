@@ -16,27 +16,27 @@
       <div class="major">
         <div class="calc">
           <p>Bill</p>
-          <input type="text" id="bill" placeholder="💲" />
+          <input type="number" id="bill" />
           <p>Select Tip %</p>
-          <button id="percent">5%</button>
-          <button id="percent">10%</button>
-          <button id="percent">15%</button>
+          <button id="percent5">5%</button>
+          <button id="percent10">10%</button>
+          <button id="percent15">15%</button>
           <br />
-          <button id="percent">25%</button>
-          <button id="percent">50%</button>
-          <button id="custom">Custom</button>
+          <button id="percent25">25%</button>
+          <button id="percent50">50%</button>
+          <button id="percent100">100%</button>
 
           <p>Number of People</p>
-          <input type="text" placeholder="👤" />
+          <input type="number" id="people" />
         </div>
         <div class="minor">
           <div class="tip">
             <p>Tip Amount <br />/Person</p>
-            <b>$0.00</b>
+            <b id="tipEl">$0.00</b>
           </div>
           <div class="total">
             <p>Total <br />/Person</p>
-            <b>$0.00</b>
+            <b id="totalEl">$0.00</b>
           </div>
           <button id="reset">RESET</button>
         </div>

@@ -1,14 +1,50 @@
-let percentElem = document.getElementById("percent");
 let billElem = document.getElementById("bill");
-let tipElem = document.getElementById("tip");
-let totalElem = document.getElementById("total");
+let tipElem = document.getElementById("tipEl");
+let totalElem = document.getElementById("totalEl");
 let resetElem = document.getElementById("reset");
-let customElem = document.getElementById("custom");
-let percent = 0;
-let bill = 0;
+
+const percent5 = document.getElementById("percent5");
+percent5.addEventListener("input", () => {
+  addPercent(5);
+});
+const percent10 = document.getElementById("percent10");
+percent10.addEventListener("input", () => {
+  addPercent(10);
+});
+const percent15 = document.getElementById("percent15");
+percent15.addEventListener("input", () => {
+  addPercent(15);
+});
+const percent25 = document.getElementById("percent25");
+percent25.addEventListener("input", () => {
+  addPercent(25);
+});
+const percent50 = document.getElementById("percent50");
+percent50.addEventListener("input", () => {
+  addPercent(50);
+});
+const percent100 = document.getElementById("percent100");
+percent100.addEventListener("input", () => {
+  addPercent(100);
+});
 let tip = 0;
 let total = 0;
-billElem.addEventListener("click", function() );
-percentElem.addEventListener("click", function() );
-resetElem.addEventListener("click", function() );
-customElem.addEventListener("click", function() );
+let bill = 0;
+function addPercent(percent) {
+  const bill = parseInt(billElem.value);
+  const people = parseInt(peopleElem.value);
+  tip = (bill * (percent / 100)) / people;
+  total = (bill + tip) / people;
+  UpdateUI();
+}
+function UpdateUI() {
+  tipElem.innerText = `$${tip}`;
+  totalElem.innerText = `$${total}`;
+}
+function reset() {
+  billElem.value = "";
+  tipElem.innerText = `$0.00`;
+  totalElem.innerText = `$0.00`;
+  peopleElem.value = "";
+  customElem.value = "";
+}

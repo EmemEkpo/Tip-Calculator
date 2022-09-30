@@ -2,6 +2,7 @@ let billElem = document.getElementById("bill");
 let tipElem = document.getElementById("tipEl");
 let totalElem = document.getElementById("totalEl");
 let resetElem = document.getElementById("reset");
+let peopleElem = document.getElementById("people");
 
 const percent5 = document.getElementById("percent5");
 percent5.addEventListener("click", () => {
@@ -41,10 +42,10 @@ function UpdateUI() {
   totalElem.innerText = `$${total}`;
   console.log();
 }
-function reset() {
+reset.addEventListener("click", function () {
   billElem.value = "";
   tipElem.innerText = `$0.00`;
   totalElem.innerText = `$0.00`;
   peopleElem.value = "";
-  customElem.value = "";
-}
+  console.log();
+});
